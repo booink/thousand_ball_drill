@@ -1,0 +1,9 @@
+version: '3'
+services:
+  thousand_ball_drill:
+    build:
+      context: .
+    volumes:
+      - .:/app
+      - ./tmp/.cargo/registry:/root/.cargo/registry
+    #command: cargo watch -x "run -j 6" -w src
